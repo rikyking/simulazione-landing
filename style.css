@@ -133,7 +133,7 @@ nav .wrapper {
   width: 350px;
   border-radius: 10px;
 }
-.section-2 .wrapper {
+.section-rev .wrapper {
   flex-direction: row-reverse;
 }
 
@@ -164,7 +164,7 @@ nav .wrapper {
   border-radius: 10px;
 }
 
-.img h2{
+.img h2 {
   text-align: center;
 }
 
@@ -181,23 +181,157 @@ footer {
   justify-content: space-around;
 }
 
-.flex-footer h2{
+.flex-footer h2 {
   color: white;
 }
 .flex-footer ul li {
   list-style: none;
   padding: 5px;
 }
-.flex-footer a, .copyright a{
+.flex-footer a,
+.copyright a {
   text-decoration: none;
   color: white;
 }
-.flex-footer a:hover{
+.flex-footer a:hover {
   font-size: larger;
 }
-.copyright{
+.copyright {
   margin-top: 5px;
   background-color: rgb(43, 47, 100);
   padding: 20px;
   color: white;
+}
+
+/* media query */
+
+@media only screen and (max-width: 430px) {
+  .menu {
+    display: none;
+  }
+  .ham-menu {
+    height: 30px;
+    width: 30px;
+    margin: 20px;
+  }
+
+  .jumbo .cta h1{
+    font-size: 50px;
+  }
+
+  .jumbo .cta a{
+    font-size: 12px;
+  }
+
+  .main-section .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .flex-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .img{
+    padding-top: 20px;
+  }
+
+  .main-section .img img {
+    width: 300px;
+  }
+  .main-section p{
+    font-size: 14px;
+  }
+  .txt h2, .img h2{
+    font-size: medium;
+    padding-top: 10px;
+  }
+  .more{
+    padding-top: 25px;
+  }
+
+  .more h1{
+    font-size: 25px;
+  }
+ 
+  /* footer mobile */
+
+  footer{
+    height: 300px;
+  }
+  
+  .flex-footer div, .copyright {
+    font-size: small;
+  }
+  
+  .flex-card .img {
+    margin: 0 auto;
+  }
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+  .menu {
+    display:initial;
+  }
+  
+  .jumbo .cta h1{
+    font-size: 50px;
+  }
+
+  .jumbo .cta a{
+    font-size: 12px;
+  }
+
+  .main-section .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .flex-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .img{
+    padding-top: 10px;
+  }
+
+  .main-section .img img {
+    width: 320px;
+  }
+  .main-section p{
+    font-size: 16px;
+  }
+  .txt h2, .img h2{
+    padding-top: 10px;
+  }
+  .more{
+    padding-top: 25px;
+  }
+
+  .flex-card .img {
+    margin: 0 auto;
+  }
+  
+
+  /* footer mobile */
+
+  footer{
+    height: 300px;
+  }
+  
+  
+  
+  
 }
