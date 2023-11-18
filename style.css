@@ -108,12 +108,14 @@ nav .wrapper {
   background-color: rgb(43, 47, 100);
   color: white;
   font-weight: bold;
+  transform: scale(1.05);
 }
 
 .btn-2:hover {
   background-color: white;
   color: rgb(43, 47, 100);
   font-weight: bold;
+  transform: scale(1.05);
 }
 
 /* Section */
@@ -203,8 +205,48 @@ footer {
   color: white;
 }
 
-/* media query */
+/* @audit pagina about */
 
+.j-about {
+  background-image: url(assets/dino-reichmuth-A5rCN8626Ck-unsplash.jpg);
+  height: calc(65vh - 70px);
+}
+.sec-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(43, 47, 100);
+  color: white;
+  /* margin: 0 30vw 0 30vw; */
+}
+.sec-about img {
+  width: 50vw;
+}
+
+.aboutUs {
+  padding: 0px 100px 0px 100px;
+}
+
+.reviews .img img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.reviews .star img {
+  padding: 5px;
+  width: 150px;
+}
+
+.reviews {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 10px;
+}
+
+/* @audit media-query */
+
+/* mobile */
 @media only screen and (max-width: 430px) {
   .menu {
     display: none;
@@ -241,9 +283,6 @@ footer {
     padding-top: 20px;
   }
 
-  .main-section .img img {
-    width: 300px;
-  }
   .main-section p {
     font-size: 14px;
   }
@@ -274,14 +313,38 @@ footer {
   .flex-card .img {
     margin: 0 auto;
   }
+
+  /* about */
+  .sec-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .aboutUs {
+    padding: 30px;
+  }
+  .aboutUs p,
+  .aboutUs h2 {
+    font-size: small;
+  }
+  .sec-about img {
+    width: 100vw;
+  }
+
+  .reviews {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 30px;
+  }
 }
 
-@media only screen and (max-width: 1025px) {
+/* tablet */
+@media only screen and (min-width: 431px) and (max-width: 1025px) {
   .menu {
     display: none;
   }
   .ham-menu {
-    height: 30px;
     width: 30px;
     margin: 20px;
   }
@@ -311,9 +374,6 @@ footer {
     padding-top: 10px;
   }
 
-  .main-section .img img {
-    width: 320px;
-  }
   .main-section p {
     font-size: 16px;
   }
@@ -329,9 +389,7 @@ footer {
     margin: 0 auto;
   }
 
-  /* footer mobile */
-
-  footer {
-    height: 300px;
+  .aboutUs {
+    padding: 40px;
   }
 }
