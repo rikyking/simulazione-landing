@@ -1,4 +1,4 @@
-# ✈ Simulazione landing-page per una agenzia di viaggi ✈
+# Simulazione landing-page per una agenzia di viaggi ✈
 
 Realizzazione di una landing-page per una agenzia di viaggi, che prevede 3 pagine: home, about e contatti. Il tutto è stato reso responsive per permettere la visualizzazione delle pagine anche da dispositivi mobili.
 
