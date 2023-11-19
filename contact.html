@@ -1,0 +1,122 @@
+<!-- 
+    TRACCIA 
+    NUMERO 
+    2 
+    AGENZIA DI VIAGGI
+-->
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="wrapper">
+          <!-- Logo -->
+          <div class="logo">
+            <a href="/index.html"><img src="assets/logo.png" alt="Logo" /></a>
+          </div>
+          <!-- Menu -->
+          <div class="ham-menu">
+            <img src="assets/menu.svg" alt="" />
+          </div>
+          <div class="menu">
+            <ul>
+              <li><a href="index.html" class="link">Home</a></li>
+              <li><a href="about.html" class="link">About</a></li>
+              <li><a href="contact.html" class="link">Contatti</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="flex h1-form">
+      <h1>Non esitare a contattarci per maggiori informazioni</h1>
+    </div>
+    <main class="form-main">
+      <form action="/submit_form" method="post">
+        <!-- Sostituisci "/submit_form" con l'URL o l'endpoint del tuo server per gestire il form -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required /><br /><br />
+
+        <label for="cognome">Cognome:</label>
+        <input type="text" id="cognome" name="cognome" required /><br /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="messaggio">Messaggio:</label><br />
+        <textarea
+          id="messaggio"
+          name="messaggio"
+          rows="4"
+          cols="50"
+          required
+        ></textarea
+        ><br /><br />
+
+        <input
+          type="radio"
+          id="privacy"
+          name="privacy"
+          value="accetto"
+          required
+        />
+        <label for="privacy">Accetto la privacy</label><br /><br />
+
+        <input
+          type="checkbox"
+          id="newsletter"
+          name="newsletter"
+          value="iscriviti"
+        />
+        <label for="newsletter">Iscriviti alla newsletter</label><br /><br />
+
+        <input type="submit" value="Invia" />
+      </form>
+      <img src="assets/andrew-neel-ute2XAFQU2I-unsplash.jpg" alt="contact-us" />
+    </main>
+    <footer class="flex">
+      <div class="wrapper flex-footer">
+        <div class="logo">
+          <a href="#"><img src="assets/sky-travel-2.svg" alt="Logo" /></a>
+        </div>
+        <div>
+          <h2>Pagine</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contatti</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Links</h2>
+          <ul>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="contact.html">Contatti</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright flex">
+      <h4>
+        <a href="https://github.com/rikyking" target="_blank"
+          >Copyright © 2023 Riccardo Patronaggio</a
+        >
+      </h4>
+    </div>
+  </body>
+</html>
